@@ -1,0 +1,12 @@
+{% extends '@EasyAdmin/page/content.html.twig' %}
+
+{% block content %}
+    <h1>Welcome to the Admin Dashboard</h1>
+    <p>Here you can manage different sections of your application:</p>
+    <ul>
+        <li><a href="{{ path('admin', {crudControllerFqcn: 'App\\Controller\\Admin\\ProductoCrudController'}) }}">Manage Producto</a></li>
+        <li><a href="{{ path('admin', {crudControllerFqcn: 'App\\Controller\\Admin\\CategoriaCrudController'}) }}">Manage Categoria</a></li>
+        <li><a href="{{ path('admin', {crudControllerFqcn: 'App\\Controller\\Admin\\SubcategoriaCrudController'}) }}">Manage Subcategoria</a></li>
+        <!-- Add more links as needed -->
+    </ul>
+{% endblock %}
